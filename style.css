@@ -3,3 +3,33 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg ,black, rgb(21, 30, 52), black);
+}
+body p{
+    
+}
+#stopwatch{
+    width: 450px;
+    height: 300px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgba(57, 188, 249, 0.834);
+    border-radius: 10px;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    padding: 30px;
+}
+.screen img{
+    width: 100px;
+    height: 100px;
+   
+}
