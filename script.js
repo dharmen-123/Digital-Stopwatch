@@ -12,6 +12,6 @@ sec.innerHTML= s++;
 
 function stop(){
     clearInterval(stp);
-    let button2 = document.querySelector('.button2')
-    button2.src=""
+    let button2p = document.querySelector('.button2')
+    button2p.src="pausebutton.png"
 }
