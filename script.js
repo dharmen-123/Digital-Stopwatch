@@ -15,9 +15,13 @@ sec.innerHTML= s++;
 
 function stop(){
     clearInterval(stp);
-    button2.src="pausebutton."
+   let but2p =( button2.src="pausebutton.png")
     // button2.style.display="none"
     // button2p.style.display="block"
+   but2p.addEventListener('click',()=>{
+    but2p.src="playbutton.png"
+   })
+  
 }
 function pause(){
 
