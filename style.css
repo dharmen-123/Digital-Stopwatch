@@ -11,8 +11,15 @@ body{
     height: 100vh;
     background: linear-gradient(90deg ,black, rgb(21, 30, 52), black);
 }
-body p{
-    
+body .maindiv{
+     align-items: center;
+     text-align: center;
+  
+}
+.maindiv p{
+    font-size: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 #stopwatch{
     width: 450px;
@@ -28,8 +35,19 @@ body p{
     font-weight: bold;
     padding: 30px;
 }
-.screen img{
-    width: 100px;
-    height: 100px;
-   
+.screen{
+    padding-top: 10%;
+    word-spacing: 30px;
+}
+.button1{
+    width: 80px;
+    height: 80px;
+}
+.button2{
+    width: 70px;
+    height: 70px;
+}
+.button3{
+    width: 70px;
+    height: 70px;
 }

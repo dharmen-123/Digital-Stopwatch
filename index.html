@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-         <p>Stopwatch</p>
+  <div class="maindiv">
+      <p>Stopwatch</p>
       <div id="stopwatch">
-          <span>00</span>
+          <span id="hrs">00</span>
           <span>:</span>
-          <span>00</span>
+          <span id="min">00</span>
           <span>:</span>
-          <span>00</span>
+          <span id="sec">00</span>
         <div class="screen">
-            <img src="startbutton.png" alt="">
-            <img src="playbutton.png" alt="">
-            <img src="refreshbutton.png" alt="">
+            <img class="button1" onclick="start()" src="startbutton.png" alt="">
+            <img class="button2" onclick="stop()" src="playbutton.png" alt="">
+            <img class="button3" onclick="reset()" src="refreshbutton.png" alt="">
         </div>
       </div>
-
+    </div>
 
     <script src="script.js"></script>
 </body>
