@@ -13,8 +13,8 @@ let m=1;
 let h=1;
 stp= setInterval(() => {
 
-sec.innerHTML = s++;
-(s<10?"0":"")
+sec.innerHTML = s++;+(s<10?"0":"")
+
 if(s>=60){
     min.innerHTML = m++;
     s=1;
@@ -23,22 +23,16 @@ if(s>=60){
        m=1;
     }
 }
-}, 300);
+}, 20);
 } 
 
 
 function stop(){
     clearInterval(stp);
-//    let but2p =(button2.src="pausebutton.png")
-   but2p.addEventListener('click',()=>{
-    but2p.src="playbutton.png"
-   })
-  
+   button2.src="pausebutton.png"  
 }
 function pause(){
-
-     button2.style.display="block"
-    button2p.style.display="none"
+    button2p.src="playbutton.png"
 }
 
 function reset(){
