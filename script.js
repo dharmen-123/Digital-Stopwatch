@@ -2,7 +2,7 @@ let hrs = document.getElementById('hrs')
 let min = document.getElementById('min')
 let sec = document.getElementById('sec')
 let button2 = document.querySelector('.button2')
-// let button2p = document.querySelector('.button2p')
+let button2p = document.querySelector('.button2p')
 
 let stp;
 function start(){
@@ -15,9 +15,7 @@ sec.innerHTML= s++;
 
 function stop(){
     clearInterval(stp);
-   let but2p =( button2.src="pausebutton.png")
-    // button2.style.display="none"
-    // button2p.style.display="block"
+   let but2p =(button2.src="pausebutton.png")
    but2p.addEventListener('click',()=>{
     but2p.src="playbutton.png"
    })
