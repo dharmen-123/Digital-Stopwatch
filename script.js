@@ -39,12 +39,15 @@ if(s>=60){
 }, 20);
 } 
 
+function stop(){
+    clearInterval(stp);
+    button2.src="pausebutton.png"
 
-
-
+}
 
 function reset(){
     sec.innerHTML = "00"
     min.innerHTML = "00"
     hrs.innerHTML = "00"
 }
+ 
