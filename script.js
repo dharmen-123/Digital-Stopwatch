@@ -18,12 +18,8 @@ button2p.style.display="none"
 
 let screen = document.querySelector('screen')
 screen.setAttribute("style","paddingTop: 10%; wordSpacing: 30px;")
-let stp;
-// .screen{
-//     padding-top: 10%;
-//     word-spacing: 30px;
-// }
 
+let stp;
 function start(){
 let s=1;
 let m=1;
