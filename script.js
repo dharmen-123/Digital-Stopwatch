@@ -20,14 +20,13 @@ let screen = document.querySelector('screen')
 screen.setAttribute("style","paddingTop: 10%; wordSpacing: 30px;")
 
 let stp;
+
 function start(){
 let s=1;
 let m=1;
 let h=1;
 stp= setInterval(() => {
-
-sec.innerHTML = s++;+(s<10?"0":"")
-
+     sec.innerHTML = s++
 if(s>=60){
     min.innerHTML = m++;
     s=1;
@@ -39,14 +38,13 @@ if(s>=60){
 }, 20);
 } 
 
-
 function stop(){
     clearInterval(stp);
    button2.src="pausebutton.png"  
 }
-function pause(){
-    button2p.src="playbutton.png"
-}
+// function pause(){
+//     button2p.src="playbutton.png"
+// }
 
 function reset(){
     sec.innerHTML = "00"
