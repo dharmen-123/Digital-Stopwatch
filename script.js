@@ -4,7 +4,7 @@ let sec = document.getElementById('sec')
 
 let button2 = document.querySelector('.button2')
 let button2p = document.querySelector('.button2p')
-button2p.style.display="none"
+// button2p.style.display="none"
 
 let p = document.querySelector('p')
 p.style.fontSize = "60px"
@@ -39,9 +39,9 @@ if(s>=60){
 }, 20);
 } 
 
-function stop(){
+function pause(){
     clearInterval(stp);
-    
+    button2.src="pausebutton.png"
 }
 
 
