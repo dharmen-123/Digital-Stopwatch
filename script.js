@@ -33,11 +33,11 @@ function start(){
     hrs.innerHTML = h++;
     }
    }
-  },100)
+  },100);
 
 }
 
 function stop(){
-    clearInterval(stp)
+    
     button2.src ="pausebutton.png"
 } 
