@@ -8,47 +8,47 @@ let button2p = document.querySelector('.button2p')
 let p = document.querySelector('p')
 p.style.fontSize = "60px"
 p.style.color = "white"
-p.style.fontFamily ="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+p.style.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
 
-let button1 =document.querySelector('.button1')
-let button3 =document.querySelector('.button3')
-button1.setAttribute("style","width:80px; height:80px;")
-button3.setAttribute("style","width:70px; height:70px;")
-button2p.style.display="none"
+let button1 = document.querySelector('.button1')
+let button3 = document.querySelector('.button3')
+button1.setAttribute("style", "width:80px; height:80px;")
+button3.setAttribute("style", "width:70px; height:70px;")
+button2p.style.display = "none"
 
 let screen = document.querySelector('screen')
-screen.setAttribute("style","paddingTop: 10%; wordSpacing: 30px;")
+screen.setAttribute("style", "paddingTop: 10%; wordSpacing: 30px;")
 let stp;
 
-function start(){
-let s=0;
-let m=0;
-let h=0;
-stp= setInterval(() => {
+function start() {
+    let s = 0;
+    let m = 0;
+    let h = 0;
+    stp = setInterval(() => {
 
-sec.innerHTML = s++; + (s<10?"0":"")
+        sec.innerHTML = s++;
 
-if(s==60){
-    s=0;
-    min.innerHTML = m++;
-    if(m==60){
-       m=0;
-        hrs.innerHTML = h++;
-    }
+        if (s == 60) {
+            s = 0;
+            min.innerHTML = m++;
+            if (m == 60) {
+                m = 0;
+                hrs.innerHTML = h++;
+            }
+        }
+    }, 200);
 }
-}, 200);
-} 
 
 
-function stop(){
+function stop() {
     clearInterval(stp);
-   button2.src="pausebutton.png"  
+    button2.src = "pausebutton.png"
 }
-function pause(){
-    button2p.src="playbutton.png"
+function pause() {
+    button2p.src = "playbutton.png"
 }
 
-function reset(){
+function reset() {
     sec.innerHTML = "00"
     min.innerHTML = "00"
     hrs.innerHTML = "00"
