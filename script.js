@@ -19,10 +19,25 @@ button3.setAttribute("style", "width:70px; height:70px;")
 let screen = document.querySelector('screen')
 screen.setAttribute("style", "paddingTop: 10%; wordSpacing: 30px;")
 
+let stp;
+
 function start(){
-    let [s,m,h]=[1,1,1]
-  stp = setInterval(()=>{
-   
-  },1000)
+    let [s,m,h]=[1,1,1];
+ stp = setInterval(()=>{
+   sec.innerHTML = s++;
+   if(s==60){
+    s=0;
+    min.innerHTML =  m++;
+    if(m==60){
+        m=0;
+    hrs.innerHTML = h++;
+    }
+   }
+  },100)
 
 }
+
+function stop(){
+    clearInterval(stp)
+    button2.src ="pausebutton.png"
+} 
