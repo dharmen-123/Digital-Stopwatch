@@ -18,7 +18,7 @@ body .maindiv{
 }
 
 #stopwatch{
-    width: 450px;
+    width: 420px;
     height: 220px;
     display: inline-block;
     justify-content: center;
@@ -39,5 +39,8 @@ body .maindiv{
     height: 70px;
 }
 
+.screen img:hover{
+    box-shadow: 0px 0px 20px rgba(255, 0, 187, 0.834);
+}
 
 
